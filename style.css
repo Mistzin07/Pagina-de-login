@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+    color: #ffffff;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #ffffff;
+    background-color: rgb(20, 20, 20);
+}
+
+.container {
+    height: 350px;
+    width: 450px;
+    border: 3px solid #ffffff;
+    box-shadow: 0 0 10px #ffffff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+
+.container:houver {
+    border: 3px solid #00e1ff;
+    box-shadow: 0 0 10px #00e1ff;
+}
+
+.input-box {
+    width: 340px;
+    margin: 30px 0;
+    position: relative;
+}
+
+.input-box input {
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    height: 55px;
+    outline: none;
+    padding: 0 35px 0 10px;
+    font-size: 17px;
+    color: #00e1ff;
+    border-radius: 2px
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .3s ease;
+}
+
+.input-box input:focus+label,
+.input-box input:valid+label {
+    top: -2px;
+    background: #222;
+    color: #00e1ff;
+    padding: 0 5px;
+    z-index: 11111;
+
+}
+
+.input-box i {
+    position: absolute;
+    right: 8px;
+    top: 16px;
+    font-size: 1.4em;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.input-box input:focus~i,
+.input-box input:valid~i {
+    color: #00e1ff;
+}
+
+.input-box input[typer="button"] {
+    background: transparent;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 3s;
+}
+
+.container:houver input[typer="button"] {
+    border: 2px solid #00e1ff;
+    color: #222222;
+    background: #00e1ff;
+}
